@@ -12,10 +12,10 @@
 }
 .canvas {
   width: calc(100% - .2rem);
-  height: 9rem;
+  height: 10rem;
   padding: .1rem;
 }
 .canvas #main {
-  width: 1200px;
+  width: inherit;
   height: inherit;
 }
