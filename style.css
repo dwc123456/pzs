@@ -12,7 +12,7 @@
 }
 .canvas {
   width: calc(100% - .2rem);
-  height: 10rem;
+  height: 15rem;
   padding: .1rem;
 }
 .canvas #main {
@@ -20,5 +20,5 @@
   height: inherit;
 }
 .e {
-  
+
 }
