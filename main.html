@@ -56,8 +56,15 @@
                 option = {
                     tooltip: {
                         trigger: 'axis',
-                        extraCssText: 'transform: rotate(90deg)'
+                        extraCssText: 'transform: rotate(90deg)',
+                        
                     },
+                    grid: {
+                            left: '1%',
+                            // right: '1%',
+                            bottom: '10%',
+                            containLabel: true,
+                        },
                     xAxis: {
                         type: 'value', //数据
                         position: 'top', //x 轴的位置【top bottom】
@@ -74,7 +81,7 @@
                         data: arr1,
                         inverse: 'true', //是否是反向坐标轴。
                         axisLabel: {
-                            rotate: -90
+                            rotate: -45
                         },
                     },
                     series: [{
