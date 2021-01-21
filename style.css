@@ -19,3 +19,12 @@
   width: inherit;
   height: inherit;
 }
+
+.container div span{
+  position: relative;
+  /* top: 1%; */
+  right: 5%;
+  font-size: smaller;
+  line-height: 34px;
+  color: darkgrey;
+}
