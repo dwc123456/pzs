@@ -28,3 +28,8 @@
   line-height: 34px;
   color: darkgrey;
 }
+.container h5{
+  font-weight: bold;
+  text-align: center;
+  line-height: .23rem;
+}
