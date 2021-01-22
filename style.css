@@ -32,4 +32,10 @@
   font-weight: bold;
   text-align: center;
   line-height: .23rem;
+  /* float: left; */
+}
+.date {
+  display:flex;
+  justify-content: space-around;
+  flex-wrap: nowrap;
 }

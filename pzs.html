@@ -42,8 +42,12 @@
             <div> 新能源半成品(大后)<input type="text"><span>片</span></div>
             <input type="button" value="生成示意图" id="submit">
         </div>
+        
         <h4 style="text-align: center;">证照制作所牌照车间<input type="text" style="width: .12rem;font-weight: bold;">产量</h4>
+        <div class="date">
         <h5><input type="text" style="width: .3rem;font-weight: bold;">年<input type="text" style="width: .3rem;font-weight: bold;">月<input type="text" style="width: .3rem;font-weight: bold;">日</h5>
+        <h5><input type="text" style="width: .3rem;font-weight: bold;">年<input type="text" style="width: .3rem;font-weight: bold;">月<input type="text" style="width: .3rem;font-weight: bold;">日</h5>
+        </div>
     </div>
     <div class="canvas">
         <div id="main" style="height: 6rem;"></div>
@@ -68,6 +72,7 @@
                     tooltip: {
                         trigger: 'axis',
                         extraCssText: 'transform: rotate(90deg)',  
+                        showContent:false, 
                     },
                     grid: {
                             top:'10%',
