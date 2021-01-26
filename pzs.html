@@ -12,6 +12,15 @@
 </head>
 
 <body>
+     
+    <h4 style="text-align: center;">证照制作所牌照车间<input type="text" style="width: .18rem;font-weight: bold; text-align: center;font-size: 22px;">产量</h4>
+    <div class="date">
+    <h5><input type="text" style="width: .3rem;font-weight: bold;">年<input type="text" style="width: .3rem;font-weight: bold;">月<input type="text" style="width: .3rem;font-weight: bold;">日</h5>---
+    <h5><input type="text" style="width: .3rem;font-weight: bold;">年<input type="text" style="width: .3rem;font-weight: bold;">月<input type="text" style="width: .3rem;font-weight: bold;">日</h5>
+    </div>
+    <div class="canvas">
+        <div id="main" style="height: 6rem;"></div>
+    </div>
     <div class="container">
         <form action="">
             <div> 小车：<input type="text" name="小车" ><span>片</span></div>
@@ -42,20 +51,13 @@
             <div> 新能源半成品(大后)<input type="text"><span>片</span></div>
             <input type="button" value="生成示意图" id="submit">
         </div>
-        
-        <h4 style="text-align: center;">证照制作所牌照车间<input type="text" style="width: .12rem;font-weight: bold;">产量</h4>
-        <div class="date">
-        <h5><input type="text" style="width: .3rem;font-weight: bold;">年<input type="text" style="width: .3rem;font-weight: bold;">月<input type="text" style="width: .3rem;font-weight: bold;">日</h5>
-        <h5><input type="text" style="width: .3rem;font-weight: bold;">年<input type="text" style="width: .3rem;font-weight: bold;">月<input type="text" style="width: .3rem;font-weight: bold;">日</h5>
-        </div>
-    </div>
-    <div class="canvas">
-        <div id="main" style="height: 6rem;"></div>
+       
     </div>
 
     <script>
         $(function () {
             $('#submit').click(function () {
+                $('.canvas').css({display:"block"})
                 var obj = {};
                 //循环遍历form表单
                 var str = $('form').serializeArray();
@@ -63,12 +65,20 @@
                 str.forEach((item => {
                     arr1.push(item.name)
                     arr2.push(Number(item.value))
-                }))
+                }));
+                var sum=0
+                for(var i=0;i<arr2.length;i++){
+                    sum=sum+arr2[i]
+                } 
+            //    alert(sum)
                 // 基于准备好的dom，初始化echarts实例
                 var myChart = echarts.init(document.getElementById('main'));
 
                 // 指定图表的配置项和数据
                 option = {
+                    title:{
+                        text:'总产量'+sum+'片'
+                    },
                     tooltip: {
                         trigger: 'axis',
                         extraCssText: 'transform: rotate(90deg)',  
@@ -104,6 +114,9 @@
                         },
                         axisLabel: {  
                         interval: 0,  
+                        textStyle:{
+                            fontSize:'17'
+                        },
                         // rotate:-90,
                         formatter:function(value)  
                         {  
