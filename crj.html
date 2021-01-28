@@ -8,15 +8,26 @@
     <script src="echarts.min.js"></script>
     <script src="main.js"></script>
     <link rel="stylesheet" href="style.css">
+    <style>
+        .container form div{
+            font-size: smaller;
+        }
+        .container form input{
+            width: 1rem;
+        }
+    </style>
 </head>
 <body>
     <div class="container">
         <form action="">
             <div> 电子护照：<input type="text" name="电子护照"></div>
             <div style="font-size: small;"> 中华人民共和国出入境通行证：<input type="text" name="中华人民共和国出入境通行证"></div>
-            <div>电子港澳通行证：<input type="text" name="电子港澳通行证"></div>
+            <div>电子往来港澳通行证：<input type="text" name="电子往来港澳通行证"></div>
+            <div>电子往来台湾通行证：<input type="text" name="电子往来台湾通行证"></div>
             <div>前往港澳通行证：<input type="text" name="前往港澳通行证"></div>
-            
+            <div>台湾居民往来大陆通行证(一次有效)：<input type="text" name="台湾居民往来大陆通行证(一次有效)"></div>
+            <div>台湾居民往来大陆通行证(五年有效)：<input type="text" name="台湾居民往来大陆通行证(五年有效)"></div>
+            <div>外国人出入境通行证：<input type="text" name="外国人出入境通行证"></div>
             <input type="button" value="生成示意图" id="submit">
         </form>
         <h4 style="text-align: center;">出入境证件车间<input type="text" style="width: .18rem;font-weight: bold;font-size: 22px;">产量</h4>
