@@ -17,7 +17,7 @@ h4{
 }
 .canvas {
   width: calc(100% - .1rem);
-  height: 6rem;
+  /* height: 6rem; */
   padding: .1rem;
   display: none;
 }
@@ -42,6 +42,6 @@ h4{
 }
 .date {
   display:flex;
-  justify-content: space-around;
+  justify-content: center;
   flex-wrap: nowrap;
 }
