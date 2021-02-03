@@ -2,6 +2,7 @@
   clear: both;
   margin: 0;
   padding: 0;
+  font-family: '宋体';
 }
 h4{
   font-size: 22px;
@@ -11,6 +12,9 @@ h4{
 .container {
   padding: .1rem;
   width: calc(100% - .2rem);
+}
+.container div input{
+  border-radius:25px;
 }
 .container form {
   line-height: .3rem;
@@ -44,4 +48,9 @@ h4{
   display:flex;
   justify-content: center;
   flex-wrap: nowrap;
+}
+#submit{
+  width: .8rem;
+  height: .23rem;
+  font-family: '微软雅黑';
 }
