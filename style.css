@@ -24,8 +24,7 @@ h4{
   line-height: .3rem;
 }
 .container form div{
- /* display: inline;
- width: 1rem; */
+ 
 }
 .canvas {
   width: calc(100% - .1rem);
