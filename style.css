@@ -15,9 +15,14 @@ h4{
 }
 .container div input{
   border-radius:25px;
+  width: .6rem;
 }
 .container form {
   line-height: .3rem;
+}
+.container form div{
+ /* display: inline;
+ width: 1rem; */
 }
 .canvas {
   width: calc(100% - .1rem);
